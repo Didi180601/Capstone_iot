@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.rifsa_mobile">
+
+    <!-- internet location permission -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" /> <!-- camera and storage permisson -->
+    <uses-feature android:name="android.hardware.camera" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE"
+        tools:ignore="ScopedStorage" />
+
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="18" />
+    <!-- alarm notification permission -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:requestLegacyExternalStorage="true"
+        android:theme="@style/Theme.RifsaMobile"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="m">
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyCxBUaI25cpMZFaM89OdA_Uzc_6O1edq28" />
+
+        <activity
+            android:name=".view.activity.authetication.signup.SignUpActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.activity.authetication.login.LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.activity.onboarding.onboarding.OnBoarding"
+            android:exported="false" />
+        <activity
+            android:name=".view.activity.MainActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".view.activity.splashscreen.SplashScreen"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <receiver
+            android:name=".helpers.update.DiseaseUploadWorker"
+            android:enabled="true"
+            android:exported="false"
+            android:permission="alarm" />
+        <receiver
+            android:name=".helpers.update.HarvestUploadWorker"
+            android:enabled="true"
+            android:exported="false"
+            android:permission="alarm" />
+        <receiver
+            android:name=".helpers.update.FinanceUploadWorker"
+            android:enabled="true"
+            android:exported="false"
+            android:permission="alarm" />
+    </application>
+
+</manifest>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+
+    <color name="green">#15B179</color>
+    <color name="light_green">#D6FAED</color>
+    <color name="gray">#818181</color>
+    <color name="light_gray">#F1F1F1</color>
+    <color name="red">#FF3838</color>
+    <color name="main_color">#15B179</color>
+
+    <color name="light_blue_navy_200">#C6E2F6</color>
+    <color name="light_blue_navy_500">#A4BBCC</color>
+    <color name="light_blue_navy_700">#91A5B3</color>
+
+    <color name="sky_light">#1DA1F2</color>
+
+    <color name="blue_navy_200">#4368D5</color>
+    <color name="blue_navy_500">#3858B5</color>
+    <color name="blue_navy_700">#2A438C</color>
+
+    <color name="dark_blue">#2A438C</color>
+
+    <color name="cyan_200">#80CED7</color>
+    <color name="cyan_500">#6CADB5</color>
+    <color name="cyan_700">#5A9097</color>
+
+    <color name="orange_200">#FF8C5B</color>
+    <color name="orange_500">#D6764D</color>
+    <color name="orange_700">#A65B3B</color>
+
+    <color name="dark">#333</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="cream">#F7F1E6</color>
+    <color name="silver">#EEE</color>
+    <color name="grey">#C4C4C4</color>
+
+    <color name="google_red">#E33F3D</color>
+    <color name="google_green">#258774</color>
+    <color name="google_yellow">#F9B234</color>
+
+    <color name="light_red">#FFE1DB</color>
+</resources>
